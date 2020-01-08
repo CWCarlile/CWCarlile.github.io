@@ -1,0 +1,117 @@
+<head>
+<link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+
+
+
+<script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+
+
+<!--<a href = "#" class="btn">Click this link for a suprise </a>-->
+
+<!--<p class="text"> Made you look! </p>-->
+
+
+<!--
+<script>
+
+$('.btn').click(function(){
+
+$('.text').toggleClass('show');
+
+})
+    
+
+</script>
+-->
+    
+<div class="grid-container">
+  <div class="item1"><a href = "#" class="btn">Click this link for a suprise </a>
+
+<p class="text"> Made you look! </p>
+
+
+<script>
+
+$('.btn').click(function(){
+
+$('.text').toggleClass('show');
+
+})
+    
+
+</script>
+    </div>
+    
+    
+  <div class="item2"><p class="slide"> Sorry, NOT SORRY! </p>
+
+<p class="sorry"> Maybe that was a bit harsh. </p>
+
+
+<script>
+
+$('.sorry').mouseover(function(){
+    $('sorry').fadeOut('300');
+
+$('.slide').slideToggle('300');
+
+})
+    
+</script></div>
+    
+  <div class="item3"> <div class="item2"><p href = "#" class="fade"> I'm working on my tone. </p>
+      <p class="live">We all live here.</p>
+
+<p class="ego"> My ego tells me other wise. </p>
+
+
+<script>
+
+$('.item3').mouseleave(function(){
+    $('.ego').slideToggle('300');
+    $('.ego').css('color','red');
+    $('.fade').css('color','pink');
+
+
+
+})
+    
+</script></div>
+    </div>  
+    
+    
+    
+  <div class="item4"><img class="junk" src="/images/Computer-Junk.jpg" alt="Computer Junk" width="460" height="345">
+      <p class="live">we all live here.</p>
+    <script>
+
+$('.item4').mouseenter(function(){
+    $('.live').slideToggle('300');
+   
+})
+    
+</script>
+    </div>
+    
+    
+  <div class="item5"><img class="bird" src="/images/budgie_mirror.jpg" width="460" height="345">
+       <p class="reflect">R E F L E C T</p>
+     <script>
+
+$('.bird').click(function(){
+
+$('.reflect').toggleClass('show');
+
+})
+    
+    
+</script>
+    </div>
+</div>
+
+</body>
+
