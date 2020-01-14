@@ -1,5 +1,68 @@
 <head>
+<style>
+    body {
+    background:yellow;
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 0, 255, 0.8);
+     font-family: monospace;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 50px;
+}
+.grid-item {
+  background-color: rgba(0, 255, 255, 0.8);
+  border: 1px solid rgba(0, 255, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+     font-family: monospace;
+  text-align: center;
+}
+
+.text {display:none;
+    font-family: cursive;
+    color: hotpink;
+
+}
+
+.show {display:block;}
+
+.btn {color: aquamarine;}
+
+.ego {font-size: 25px;}
+
+.live {font-size: 25px;
+    color: aquamarine;
+}
+
+.reflect {color:yellow;}
+
+.
+
+    </style>
+
+
 <link rel="stylesheet" href="css/style.css">
+   
+   
     
 </head>
 
