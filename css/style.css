@@ -1,77 +1,267 @@
-* {
-	box-sizing: border-box;
-}
-
 body {
-/*	background: purple url('../images/vintage-concrete.png');*/
-	color: #333;
+	min-height: 100%;
+	background-color:deepskyblue;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    animation-name: body;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 
-a {
-	text-decoration: none;
-	color: #333;
-}
-
-a:hover { color: greenyellow; }
-
-header, nav, main, footer {
-	width: 80%;
-	margin: auto;
-}
-
-
-/* Header styles */
-header { 
-	background-color: black;
-	color: ghostwhite;
-	min-height: 100px;
-	margin-top: 60px;
-	background-image: url("../images/stars.jpeg");
-}
-
-header h1 {
-	padding: 40px 60px;
-	font-size: 48px;
+@keyframes body {
+ 0%   {background-color:white; left:0px; top:0px;}
+/*    25%  {background-color:deepskyblue; left:200px; top:0px;}*/
+    50%  {background-color:lightskyblue; left:200px; top:200px;}
+/*    75%  {background-color:lightskyblue; left:0px; top:200px;}*/
+    100% {background-color:white; left:0px; top:0px;}
 }
 
 
-/* Nav styles */
-nav { background-color: #333; }
-nav ul { 
-	display: flex;
-	justify-content: flex-end;
-}
-nav li { padding: 10px 10px; }
-nav a { color: BlanchedAlmond; }
-nav a:hover { color: white; }
 
 
-/* Main styles */
-main { 
-	background-color: #fff;
-	display: grid;
-	grid-template-columns: 60% 40%;
+h1 {font-family: 'VT323', monospace;
+	margin: 50px 50px 50px 50px;
+    text-transform: uppercase;
+    color: white;
+    text-align:right;
+    font-size: 100px;
 }
 
-section {
-	padding: 40px 60px;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 10px 10px 10px;
 }
 
-section ul, aside ul {
-	list-style-type: square;
-	margin-top: 20px; 
-	margin-left: 30px;
-	margin-bottom: 40px;
+
+.column {
+  flex: 50%;
+  padding: 10px 10px 10px 10px;
 }
 
-aside {
-	padding: 40px 10px;
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+    padding: 10px 10px 10px 10px;
 }
 
-/* Footer styles */
-footer { 
-	background-color: #000;
-	color: white;
-	text-align: center;
- }
- footer p { padding: 20px; }
+
+img.narrative {
+/*
+    position:absolute;
+    top:100px;
+    left:0px;
+*/
+    transition: transform 1s;
+    width: 400px;
+}
+
+
+img.narrative:hover {
+    transform: translate(20px, 20px);
+    
+
+}
+
+
+img.day3 {
+/*
+    position:absolute;
+    top:200px;
+    left:500px;
+*/
+    transition: transform 1s;
+    width: 400px;
+}
+
+img.day3:hover {
+    transform: translate(20px, 20px);
+    
+
+}
+
+
+img.col {
+/*
+    position:absolute;
+    top:800px;
+    left:80px;
+*/
+    transition: transform 1s;
+    width: 400px;
+}
+
+img.col:hover {
+    transform: translate(20px, 20px);
+
+}
+
+
+img.projectone {
+/*
+    position:absolute;
+    top:850px;
+    left:600px;
+*/
+    transition: transform 1s;
+    width: 400px;
+}
+
+img.projectone:hover {
+    transform: translate(20px, 20px);
+    color:aqua;
+    
+
+}
+
+
+img.projecttwo {
+/*
+    position:absolute;
+    top:850px;
+    left:600px;
+*/
+    transition: transform 1s;
+    width: 400px;
+}
+
+img.projecttwo:hover {
+    transform: translate(20px, 20px);
+    color:aqua;
+}
+
+img.projectthree{
+    transition: transform 1s;
+    width: 400px;
+    }
+
+img.projectthree:hover {
+    transform: translate(20px, 20px);
+    color:aqua;
+}
+
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+
+
+@media (max-width: 900px) {
+    
+    body { background:magenta;
+    }
+    
+    h1 {font-family: 'VT323', monospace;
+	margin: 50px 50px 50px 50px;
+    text-transform: uppercase;
+    color: yellow;
+    text-align:center;
+     font-size: 80px;   
+    }
+    .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 10px 10px 10px;
+}
+
+
+.column {
+  flex: 25%;
+  padding: 10px 10px 10px 10px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+    padding: 10px 10px 10px 10px;
+}
+      
+    img.narrative {
+   
+    transition: transform 1s;
+    width: 200px;
+    }
+
+
+    img.day3 {
+   
+    transition: transform 1s;
+        width: 200px;
+    
+    }
+    
+     img.projectone {
+   
+    transition: transform 1s;
+        width: 200px;
+    
+    }
+    
+     img.col {
+   
+    transition: transform 1s;
+        width: 200px;
+    
+    }
+}
+
+
+
+@media (max-width: 700px) {
+    
+    body { background:yellow;
+    }
+    
+    
+    h1 {font-family: 'VT323', monospace;
+	margin: 50px 50px 50px 50px;
+    text-transform: uppercase;
+    color: red;
+    text-align:left;
+        font-size: 70px;
+}
+
+    img.narrative {
+   
+    transition: transform 1s;
+    width: 400px;
+    }
+
+
+    img.day3 {
+   
+    transition: transform 1s;
+        width: 400px;
+    
+    }
+    
+     img.projectone {
+   
+    transition: transform 1s;
+        width: 400px;
+    
+    }
+    
+     img.col {
+   
+    transition: transform 1s;
+        width: 400px;
+    
+    }
+
+
+
+
+    
+    .container {
+        width:95vw;
+    }
+    
+}
