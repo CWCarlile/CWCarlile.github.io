@@ -17,7 +17,10 @@ body {
     100% {background-color:white; left:0px; top:0px;}
 }
 
+body, html {
+  cursor: url(http://www.picgifs.com/food-and-drinks/food-and-drinks/eggs/food-and-drinks-eggs-252212.gif), pointer;
 
+}
 
 
 h1 {font-family: 'VT323', monospace;
@@ -90,27 +93,42 @@ text-transform: uppercase;
     animation-duration: 10s;
     animation-iteration-count: infinite;
 }
-}
 
 
+
+/*
 .row {
   display: flex;
   flex-wrap: wrap;
-  padding: 10px 10px 10px 10px;
+  padding: 30px 30px 30px 30px;
 }
+*/
+
+.row {display: grid;
+        grid-template-columns: 3fr, 3fr;
+            grid-gap: 20px;
+        }
 
 
 .column {
   flex: 50%;
-  padding: 10px 10px 10px 10px;
+  padding: 30px 30px 30px 30px;
 }
 
 .column img {
-  margin-top: 8px;
+  margin: 20px 20px 20px 20px;
   vertical-align: middle;
-    padding: 10px 10px 10px 10px;
+    padding: 30px 30px 30px 30px;
 }
 
+.projects {
+    
+    
+}
+
+.homework {
+    
+}
 
 img.narrative {
 /*
