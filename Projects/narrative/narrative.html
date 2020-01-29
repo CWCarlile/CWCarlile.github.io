@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Narrative</title>
+     <script src="js/script.js"></script>
+     <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap" rel="stylesheet">
+</head>
+
+<style>
+ html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.Loop {
+  position: relative;
+  height: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+section {
+  position: relative;
+  text-align: center;
+  min-height: 600px;
+  max-height: 900px;
+  height: 100%;
+}
+
+::scrollbar {
+  display: none;
+}
+
+
+    body {
+  font-family: 'Major Mono Display', monospace;
+  font-weight: normal;
+  font-size: 100%;
+}
+
+    .braceface {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: fixed;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+   animation-timing-function: ease-in-out;
+  animation-delay: 2s;
+}
+    @-webkit-keyframes example {
+       
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+ 0%   {left:0px; top:0px;}
+  25%  {left:200px; top:0px;}
+  50%  {left:200px; top:200px;}
+  75%  {left:0px; top:200px;}
+100% {left:0px; top:0px;}
+}
+    
+.red {
+  background: black;
+}
+.green {
+  background: black;
+}
+.blue {
+  background: black;
+}
+.orange {
+  background: black;
+}
+
+h1 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  font-size: 80px;
+  letter-spacing: 10px;
+  color: #fff;
+  text-transform: uppercase;
+}   
+    
+    
+</style>
+<body>
+   
+   
+   <main class="Loop js-loop">
+  <section class="green">
+    <h1>What</h1>
+  </section>
+  <section class="red">
+    <h1>is</h1>
+  </section>
+  <section class="blue">
+    <h1>the</h1>
+  </section>
+  <section class="orange">
+    <h1>meaning</h1>
+  </section>
+  <section class="blue">
+    <h1>of</h1>
+  </section>
+  <section class="red">
+    <h1>this</h1>
+  </section>
+  
+  <!--
+  These blocks are the same as the first blocks to get that looping illusion going.
+  You need to add clones to fill out a full viewport height.
+  -->
+  <section class="green is-clone">
+    <h1>What</h1>
+  </section>
+  <section class="red is-clone">
+    <h1>Is</h1>
+  </section>
+  
+   <div><img class="braceface" src="/images/braceface.png" alt="Brace Face" width="460" height="345"> </div>
+  
+</main>
+    
+</body>
+
+</html>
