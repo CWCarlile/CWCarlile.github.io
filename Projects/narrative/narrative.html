@@ -6,6 +6,8 @@
      <script src="js/script.js"></script>
      <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap" rel="stylesheet">
      <script type="text/javascript" src="processing.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
 </head>
 
 <style>
@@ -208,6 +210,7 @@ h1 {
 </style>
 <body>
    
+
    
    <main class="Loop js-loop">
   
@@ -219,14 +222,18 @@ h1 {
     <h1>is</h1>
      <div><img class="birthdayhat" src="/images/22695-5-party-hat-transparent-background.png" alt="birthdayhat" width="25%" > </div>
   </section>
-  <section class="three">
-    <h1>the</h1>
-     <div><img class="butterfly" src="/images/butterfly.png" alt="butterfly" width="25%" > </div>
-    <div><img class="flowers" src="/images/30411-8-colorful-flowers-transparent-image.png" alt="flowers" width="50%" > </div>
-    
+  
    
-  </section>
-  <section class="four">
+   <section class="three">
+    <h1>the</h1>
+     <div><img class="butterfly" src="/images/butterfly.png" alt="butterfly" width="25%" > 
+   <img class="flowers" src="/images/30411-8-colorful-flowers-transparent-image.png" alt="flowers" width="50%" > 
+
+   </div>
+    </section>
+  
+   
+   <section class="four">
     <h1>meaning</h1>
   </section>
   <section class="five">
@@ -240,7 +247,17 @@ h1 {
     <canvas data-processing-sources="trianglebounce.pde"></canvas>
   </section>
   <section class="seven">
-    <h1>this</h1>
+    <h1 class="message">this</h1>
+    <script>
+$(document).ready(function(){
+  $(".seven").hover(function(){
+    alert("You give it meaning");
+  },
+  function(){
+    alert("pay attention to what you give attention");
+  }); 
+});
+</script>
   </section>
   <section class="eight">
     <h1>this</h1>
